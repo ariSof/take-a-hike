@@ -20,7 +20,7 @@ Hike.init(
         allowNull: false,
     },
     difficulty: {
-        type: DataTyes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     distance: {
