@@ -1,0 +1,20 @@
+html,
+body,
+.intro {
+  height: 100%;
+}
+
+.mask-custom {
+  background: rgba(24, 24, 16, .2);
+  border-radius: 3em;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 6px 6px 6px rgba(46, 54, 68, 0.03);
+}
+
+.hike-images{
+  display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
