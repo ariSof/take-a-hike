@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Super Hiker",
+        "email": "super.hiker@ee.com",
+        "password":"12345678"
+    },
+    {
+        "name": "Mona Lisa",
+        "email": "mona.lisa@ee.com",
+        "password":"12345678"
+    },
+    {
+        "name": "Hiking King",
+        "email": "hiking.king@ee.com",
+        "password":"12345678"
+    },{
+        "name": "Mud Queen",
+        "email": "mud.queen@ee.com",
+        "password":"12345678"
+    }
+]
