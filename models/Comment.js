@@ -28,7 +28,7 @@ Comment.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'image',
+    modelName: 'comment',
   }
 );
 
