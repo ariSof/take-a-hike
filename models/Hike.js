@@ -28,7 +28,7 @@ Hike.init(
         allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(1234),
     },
     image_url: {
       type: DataTypes.STRING,
@@ -43,7 +43,7 @@ Hike.init(
         model: 'user',
         key: 'id',
       },
-    },
+    }
   },
   {
     sequelize,
