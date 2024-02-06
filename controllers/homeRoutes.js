@@ -14,9 +14,9 @@ router.get("/", async (req, res)=>{
             ],
         });
     const hikes = hikeData.map((hike) => hike.get({ plain: true }));
-    
+
         res.render('home', {
-            hikes, 
+            hikes,
             logged_in: req.session.logged_in
         });
     } catch (err) {
@@ -32,8 +32,8 @@ router.get("/abouthike",(req, res)=>{
     res.render('about');
 });
 
-router.get("/review",(req, res)=>{
-    res.render('review');
+router.get("/comment",(req, res)=>{
+    res.render('comment');
 });
 
 router.get('/login', (req, res) => {
@@ -68,4 +68,3 @@ router.get('/hike/:id', async (req, res) => {
         res.status(500).json(err);
       }
     });
-
