@@ -13,7 +13,8 @@ router.get("/", async (req, res)=>{
                 },
             ],
         });
-    const hikes = hikeData.map((hike) => hike.get({ plain: true }));
+    
+        const hikes = hikeData.map((hike) => hike.get({ plain: true }));
     
         res.render('home', {
             hikes, 
@@ -69,3 +70,4 @@ router.get('/hike/:id', async (req, res) => {
       }
     });
 
+    module.exports = router;
