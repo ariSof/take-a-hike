@@ -9,7 +9,7 @@ router.get("/", async (req, res)=>{
             include: [
                 {
                     model: User,
-                    atributes: ['name'],
+                    atributes: ['id'],
                 },
             ],
         });
@@ -123,8 +123,8 @@ router.get('/hike/:id', async (req, res) => {
 
 
     const hike = hikeData.get({ plain: true });
-
-        res.render('hike', {
+        // res.json(hike)
+        res.render('review', {
           ...hike,
           logged_in: req.session.logged_in
         });

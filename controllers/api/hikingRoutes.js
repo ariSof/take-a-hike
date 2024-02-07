@@ -14,6 +14,30 @@ router.post('/image', withAuth, async (req,res) => {
     }
 });
 
+
+router.get('/hikes/:id', async (req, res) => {
+    try {
+     
+      const hikeData = await Hike.findByPk(req.params.id, {
+        include: [
+            {
+                attributes: ['id']
+            },
+        ],
+      });
+        const hike = hikeData.get({ plain: true });
+
+        res.render('hike', {
+            ...hike,
+            logged_in: req.session.logged_in
+        });
+    } catch (err) {
+        res.status(500).json({ error: 'Could not find any hiking trails' });
+    }
+  });
+
+
+
 router.delete('/:id', withAuth, async (req, res) => {
     try {
         const hikeData = await Hike.destroy({
