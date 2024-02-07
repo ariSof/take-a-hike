@@ -1,6 +1,7 @@
 const User = require('./User');
 const Hike = require('./Hike');
 const Image = require('./Image');
+const Comment = require('./Comment');
 
 
 User.hasMany(Hike, {
@@ -13,12 +14,21 @@ Hike.belongsTo(User, {
 });
 
 Hike.hasMany(Image, {
-    foreignKey: 'added_image_id',
+    foreignKey: 'hike_id',
     onDelete: 'CASCADE'
 })
 
 Image.belongsTo(Hike, {
-    foreignKey: 'id'
+    foreignKey: 'hike_id'
 })
 
-module.exports = { User, Hike, Image };
+Hike.hasMany(Comment, {
+  foreignKey: 'hike_id',
+  onDelete: 'CASCADE'
+})
+
+Comment.belongsTo(Hike, {
+  foreignKey: 'hike_id'
+})
+
+module.exports = { User, Hike, Image, Comment };

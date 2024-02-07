@@ -35,6 +35,12 @@
           <li class="nav-item">
             <a class="nav-link" href="/login">Login</a>
           </li>
+          <li>
+            {{!-- added the logged_out feature --}}
+            {{#if logged_in}}
+      <button class="btn" id="logout">logout</button>
+    {{/if}}
+          </li>
         </ul>
         <!-- Left links -->
       </div>
@@ -42,20 +48,16 @@
   </nav>
   <!-- Navbar -->
   </header>
-
-
-  <main>
-    {{{body}}}
+    {{{ body }}}
   </main>
-  {{#if loggedIn}}
-  <script src="../../public/js/logout.js"></script>
+  <footer>
+      
+  </footer>
+
+  <!-- Only include the logout script if the user is logged in -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
   {{/if}}
-  {{!--
-  <script src="../../public/js/home.js"></script> --}}
-  <!-- JQuery -->
-  {{!--
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> --}}
-  <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
 
 </body>

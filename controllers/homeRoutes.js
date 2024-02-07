@@ -13,7 +13,8 @@ router.get("/", async (req, res)=>{
                 },
             ],
         });
-    const hikes = hikeData.map((hike) => hike.get({ plain: true }));
+    
+        const hikes = hikeData.map((hike) => hike.get({ plain: true }));
     
         res.render('home', {
             hikes, 
@@ -64,7 +65,7 @@ router.get('/profile', withAuth, async (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect('/home');
     return;
   }
   res.render('login');
@@ -94,4 +95,5 @@ router.get('/hike/:id', async (req, res) => {
       }
     });
 
-module.exports = router;
+    module.exports = router;
+    

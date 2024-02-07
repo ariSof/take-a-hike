@@ -1,6 +1,66 @@
 [
     {
-        "url":"",
+        "url":"https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/vernalnevadaphoto_sychfp.webp",
         "hike_id": 1
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/eaton_rp4tzi.webp",
+        "hike_id": 2 
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/solstice_hj9o9z.webp",
+        "hike_id": 3
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/temescal_ruxe2g.webp",
+        "hike_id": 4
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/hollywood_px5kii.webp",
+        "hike_id": 5
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/cave_tn6a2d.jpg",
+        "hike_id": 6
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/murray_kav4xy.webp",
+        "hike_id": 7
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/mothermiguel_d6vwlt.webp",
+        "hike_id": 8
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/dictionary_a9qevy.webp",
+        "hike_id": 9
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/tijuana_p0ar3v.webp",
+        "hike_id": 10
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/rice_kpi9uo.webp",
+        "hike_id": 11
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/landsEnd_jw8sv7.webp",
+        "hike_id": 12
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/ridgeTrail_kcnbgc.webp",
+        "hike_id": 13
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/batteries_ypeivx.webp",
+        "hike_id": 14
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/sutro_kgox6l.webp",
+        "hike_id": 15
+    },
+    {
+        "url" : "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/glenCanyon_hmyg6l.webp",
+        "hike_id": 16
     }
 ]
