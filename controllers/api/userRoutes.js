@@ -16,10 +16,11 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.post('/login', async (req, res) => {
-  try {
 
-    const userData = await User.findOne({ where: { email: req.body.email } });
+
+router.post('/login', async (req, res) => {
+    try {
+        const userData = await User.findOne({ where: { email: req.body.email}});
 
     if (!userData) {
       res
@@ -57,5 +58,24 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
+
+
+      router.put('/images', async (req, res) => {
+        try {
+          const userData = await User.update(req.body, {
+            where: {
+              id: req.params.id,
+            },
+            individualHooks: true
+          });
+          if (!userData[0]) {
+            res.status(404).json({ messade: 'NO image with this id'});
+            return;
+          }
+          res.status(200).json(userData);
+        } catch (err) {
+          res.status(500).json(err);
+        }
+      });
 
 module.exports = router;
