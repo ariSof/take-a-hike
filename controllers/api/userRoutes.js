@@ -69,7 +69,7 @@ router.post('/logout', (req, res) => {
             individualHooks: true
           });
           if (!userData[0]) {
-            res.status(404).json({ messade: 'NO image with this id'});
+            res.status(404).json({ message: 'NO image with this id'});
             return;
           }
           res.status(200).json(userData);
