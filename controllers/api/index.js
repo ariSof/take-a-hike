@@ -4,7 +4,7 @@ const hikingRoutes = require('./hikingRoutes');
 
 router.use('/users', userRoutes);
 router.use('/hiking', hikingRoutes);
-router.use('/users', userRoutes);
-// router.use('/hiking', hikingRoutes);
-// app.use('/', hikeRoutes);
+
+
+
 module.exports = router;
