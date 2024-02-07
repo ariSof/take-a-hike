@@ -25,6 +25,44 @@ router.get("/", async (req, res)=>{
     }
 });
 
+//Route for searching for a hike based on difficutly,  /search/?difficulty=easy
+router.get('/search', async (req, res) => {
+  
+    // Check and see if there is a query parameter at all
+    const hasQuery = Object.keys(req.query).length > 0;
+    console.log(req.query);
+
+   // If we have a query of 'difficulty' and it's value is 'easy' or 'moderate' or 'hard' send only those results 
+    if (hasQuery && (req.query.difficulty === 'easy' || req.query.difficulty === 'moderate' || req.query.difficulty === 'hard')) {
+        try {
+            const hikeData = await Hike.findAll({
+                include: [
+                    {
+                        model: Image,
+                        atributes: ['url'],
+                    },
+                ],
+                where: {
+                    difficulty: req.query.difficulty
+                  },
+            });
+
+            const hikes = hikeData.map((hike) => hike.get({ plain: true }));
+           
+            return res.json(hikes);
+
+        // res.render('home', {
+        //     hikes,
+        //     logged_in: req.session.logged_in
+        // });
+        } catch (err) {
+            res.status(500).json(err);
+        }
+    } else {
+        return res.json("Sorry, no hikes match your search. Try again.");
+    }
+  });
+
 router.get("/home",(req, res)=>{
     res.render('home');
 });
