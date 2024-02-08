@@ -94,11 +94,6 @@ router.get('/profile', withAuth, async (req, res) => {
 });
 
 
-
-
-
-
-
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
     if (req.session.logged_in) {
@@ -125,7 +120,7 @@ router.get('/hike/:id', async (req, res) => {
         });
 
         const hike = hikeData.get({ plain: true });
-        // res.json(hike)
+        //res.json(hike)
         res.render('review', {
             ...hike,
             logged_in: req.session.logged_in

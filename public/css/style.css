@@ -4,3 +4,11 @@
     background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
     }
 
+.carousel-control-next{
+    left:250px;
+    width:5%
+}
+
+.carousel-control-prev {
+    width:5%;
+}
