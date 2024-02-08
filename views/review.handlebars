@@ -1,44 +1,40 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review</title>
-  </head>
-   <!-- Page content-->
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-8">
+ 
+<!-- Page content-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+                <!-- Preview image figure-->
+                    <figure class="mb-4"><img class="img-fluid rounded" src="{{image_url}}"> </figure>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">{{name}}</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2"></div>
+                    <!-- Post categories-->
+                </header>
+                    
                     <!-- Post content-->
-                    <article>
-                        <!-- Post header-->
-                        <header class="mb-4">
-                            <!-- Post title-->
-                            <h1 class="fw-bolder mb-1">{{name}}</h1>
-                            <!-- Post meta content-->
-                            <div class="text-muted fst-italic mb-2">Posted on February 7, 2024</div>
-                            <!-- Post categories-->
-                        </header>
-                             <body>
-                            <!-- Preview image figure-->
-                        <figure class="mb-4"><img class="img-fluid rounded"> {{image_url}} </figure>
-                        <!-- Post content-->
-                        <section class="mb-5">
-                            <h3>{{location}}</h3>
-                            <ul>
-                                <li> {{difficulty}} </li>
-                                <li> {{distance}} </li>
-                            </ul>
-                            {{description}}
-                        </section>
-                    </article>
-                             </body>
-  </html>
-
-
-
-        <div>
-        <button id="upload_widget" class="cloudinary-button">Upload files</button>
+                    <section class="mb-5">
+                        <h3>{{location}}</h3>
+                        <ul>
+                            <li> Difficulty: {{difficulty}} </li>
+                            <li> Distance: {{distance}}mi </li>
+                        </ul>
+                        {{description}}
+                    </section>
+            </article>
+        </div>
     </div>
+</div>
+                             
+  
 
-    <script src="/js/review.js"></script>
+{{!-- Section that adds the button to add images --}}
+<div>
+    <button id="upload_widget" class="cloudinary-button">Upload files</button>
+</div>
+
+<script src="/js/review.js"></script>

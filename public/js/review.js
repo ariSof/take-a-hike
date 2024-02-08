@@ -1,12 +1,19 @@
+// let carouselEl = document.querySelector('.carousel-item');
+// carouselEl.setAttribute("class", "carousel-item active");
+//const carousel = new bootstrap.Carousel('#myCarousel')
+
+const theURL = new URL(window.location.href );
+let paramString = theURL.pathname.split('/');
+let hike_id = paramString[2];
+
 let url = "";
-let hike_id = 1;
 
 var myWidget = cloudinary.createUploadWidget({
     
   cloudName: 'dwjrsllb0', 
   uploadPreset: 'hike_img'}, (error, result) => { 
     if (!error && result && result.event === "success") { 
-      url = result.info.url;
+        url = result.info.url;
       console.log(url);
       console.log('Done! Here is the image info: ', result.info); 
 
@@ -28,9 +35,6 @@ var myWidget = cloudinary.createUploadWidget({
        
       addImage();
 
-    } else {
-        console.log('Attempting cloud widget');
-        console.error(error);
     }
   }
 )

@@ -118,12 +118,15 @@ router.get('/hike/:id', async (req, res) => {
                     model: User,
                     attributes: ['name'],
                 },
+                {
+                    model: Image,
+                    attributes: ['hike_id', 'url'],
+                },
             ],
         });
 
-
         const hike = hikeData.get({ plain: true });
-        // res.json(hike)
+        //res.json(hike)
         res.render('review', {
             ...hike,
             logged_in: req.session.logged_in
@@ -134,4 +137,3 @@ router.get('/hike/:id', async (req, res) => {
 });
 
 module.exports = router;
-

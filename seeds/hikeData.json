@@ -6,7 +6,7 @@
       "difficulty": "hard",
       "distance" : "4.6",
       "description": "Explore this 6.4-mile loop trail near Yosemite Valley, California. Generally considered a challenging route, it takes an average of 4 h 10 min to complete. This is a very popular area for hiking, so you'll likely encounter other people while exploring. The best times to visit this trail are April through October. You'll need to leave pups at home — dogs aren't allowed on this trail",
-      "image_url": ""
+      "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/vernalnevadaphoto_sychfp.webp"
     },
     {
         "name": "Eaton Canyon Trail",
@@ -14,7 +14,7 @@
         "difficulty": "moderate",
         "distance" : "3.5",
         "description": "Tail in the Eaton Canyon Natural Area Park has a 446ft elevation gain, nice scenery with a waterfall in the end.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/eaton_rp4tzi.webp"
     },
     {
         "name": "Solstice Canyon Loop",
@@ -22,7 +22,7 @@
         "difficulty": "moderate",
         "distance" : "3.0",
         "description": "Beautiful canyon in the Santa Monica Mountains, with views of the ocean. Varied terrain including steps.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/solstice_hj9o9z.webp"
     },
     {
         "name": "Temescal Canyon Trail",
@@ -30,7 +30,7 @@
         "difficulty": "moderate",
         "distance" : "3.0",
         "description": "Trail in the Topanga State Park consists of a loop with 833ft elevation gain. It has a varied look. A waterfall, views of the valley and the ocean.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/temescal_ruxe2g.webp"
     },
     {
         "name": "Hollywood Sign",
@@ -38,7 +38,7 @@
         "difficulty": "moderate",
         "distance" : "6.0",
         "description": "This hike via Canyon Drive in the Griffith Park area will take you behind the Hollywood Sign letters. Part of the reward is the view of the city of LA.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/hollywood_px5kii.webp"
     },
     {
         "name": "Cave of Munits",
@@ -46,7 +46,7 @@
         "difficulty": "moderate",
         "distance" : "1.6",
         "description": "This loop trail is near West Hills, California. Generally considered a moderately challenging route. If you ever thought about trying spelunking this comes close. A very popular area for hiking, so you'll likely encounter other people while exploring. The trail is open year-round and is beautiful to visit anytime. Dogs are welcome, but must be on a leash.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/cave_tn6a2d.jpg"
     },
     {
         "name": "Lake Murray Trail",
@@ -54,7 +54,7 @@
         "difficulty": "easy",
         "distance" : "5.7",
         "description": "Easy hike in Lake Murray Community Park",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/murray_kav4xy.webp"
     },
     {
         "name": "Mother Miguel Mountain",
@@ -62,7 +62,7 @@
         "difficulty": "moderate",
         "distance" : "6.3",
         "description": "Trail to Sweetwater Reservoir, might be a good spot for birding.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/mothermiguel_d6vwlt.webp"
     },
     {
         "name": "Dictionary Hill Summit",
@@ -70,7 +70,7 @@
         "difficulty": "moderate",
         "distance" : "2.2",
         "description": "Beautiful walk in Spring Valley, CA. It meanders through trees and ends at the summit with beautiful views of the city.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250759/dictionary_a9qevy.webp"
     },
     {
         "name": "Tijuana Estuary",
@@ -78,7 +78,7 @@
         "difficulty": "easy",
         "distance" : "4.6",
         "description": "Estuary located in the Tijuana Slough National Wildlife Refuge.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/tijuana_p0ar3v.webp"
     },
     {
         "name": "Rice Canyon Trail",
@@ -86,7 +86,7 @@
         "difficulty": "easy",
         "distance" : "3.5",
         "description": "Located in the Rice Canyon Open Space Preserve, this trail offers a partly paved path. And a diverse flora & founa. A great place to feel away from the city.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/rice_kpi9uo.webp"
     },
     {
         "name": "Lands End Trail",
@@ -94,7 +94,7 @@
         "difficulty": "moderate",
         "distance" : "3.4",
         "description": "Located in the Golden Gate National Recreation Area, Land's End Trail is a favorite among local and visitors alike. This trail explores the historic Sutro Baths and offers great views of the Golden Gate Bridge.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/landsEnd_jw8sv7.webp"
     },
     {
         "name": "Bay Area Ridge Trail",
@@ -102,7 +102,7 @@
         "difficulty": "easy",
         "distance" : "1.7",
         "description": "This famous bridge span is one of the world's most spectacular and visited sites. You can cross by foot, bike or wheelchair.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/ridgeTrail_kcnbgc.webp"
     },
     {
         "name": "Batteries to Bluffs Trail",
@@ -110,7 +110,7 @@
         "difficulty": "easy",
         "distance" : "2.3",
         "description": "This trail explores the wild western shoreline along the cliffs bordering the Pacific Ocean.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/batteries_ypeivx.webp"
     },
     {
         "name": "Mount Sutro Loop",
@@ -118,7 +118,7 @@
         "difficulty": "moderate",
         "distance" : "2.2",
         "description": "This nook of wilderness in Mount Sutro Open Space Reserve near the UCSF campus offers a great respite from the busy urban life of the city.",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/sutro_kgox6l.webp"
     },
     {
         "name": "Glen Canyon Park",
@@ -126,7 +126,7 @@
         "difficulty": "easy",
         "distance" : "1.8",
         "description": "Glen Canyon offers incredible spring wildflower displays, dramatic rock formations, adn Islais Creek (one of the few remaining free-flowing creeks in San Francisco).",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/dwjrsllb0/image/upload/v1707250758/glenCanyon_hmyg6l.webp"
     }
 
 ]
