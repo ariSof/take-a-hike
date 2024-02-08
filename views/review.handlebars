@@ -1,18 +1,43 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+  </head>
+   <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">{{name}}</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on February 7, 2024</div>
+                            <!-- Post categories-->
+                        </header>
+                             <body>
+                            <!-- Preview image figure-->
+                        <figure class="mb-4"><img class="img-fluid rounded"> {{image_url}} </figure>
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <h3>{{location}}</h3>
+                            <ul>
+                                <li> {{difficulty}} </li>
+                                <li> {{distance}} </li>
+                            </ul>
+                            {{description}}
+                        </section>
+                    </article>
+                             </body>
+  </html>
 
-  <h1>{{image_url}}</h1>
-    <h2>{{name}}</h2>
-    <h3>{{location}}</h3>
-    <ul>
-        <li> {{difficulty}} </li>
-           <li> {{distance}} </li>
-    </ul>
-    <p>{{description}}</p>
-    
-    
-    
-    
-     {{!-- Section to add image as a user who is logged in --}}
-    <div>
+
+
+        <div>
         <button id="upload_widget" class="cloudinary-button">Upload files</button>
     </div>
 
