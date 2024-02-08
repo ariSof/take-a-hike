@@ -134,12 +134,5 @@ router.get('/hike/:id', async (req, res) => {
         res.status(500).json(err);
     }
 });
-<<<<<<< HEAD
 
 module.exports = router;
-    
-=======
-
-module.exports = router;
-
->>>>>>> main
