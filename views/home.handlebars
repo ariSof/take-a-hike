@@ -2,27 +2,23 @@
     <div class="bg-image h-100" style="
           background-image: url(https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
         ">
-        <div class="mask d-flex align-items-center h-100" style="background-color: rgba(61, 162, 195, 0.1);">
+        <div class="d-flex align-items-center h-100" style="background-color: rgba(61, 162, 195, 0.1);">
             <div class="container">
                 <div class="card mask-custom p-4">
                     <div class="card-body">
-                        <p class="h1 font-weight-bold mb-4 text-white">Discover Amazing Hikes</p>
-                        <div class="row justify-content-center">
+                        <div class="row">
+                            <p class="h1 font-weight-bold mb-4 text-white">Discover Amazing Hikes</p>
                             <div class="col-md-6 mb-3 mb-md-0">
-                                <div id="basic" class="form-outline form-white">
-                                    <input type="text" id="form1" class="form-control form-control-lg" />
-                                    <label class="form-label" for="form1">Please enter hike name, location, or
+                                <div id="basic" class="form-outline form-white" data-mdb-input-init>
+                                    <input type="search" id="searchInput" class="form-control form-control-lg" />
+                                    <label class="form-label" for="searchInput">Please enter hike name, location, or
                                         difficulty</label>
                                 </div>
                             </div>
                             <div class="col-md-4 mb-3 mb-md-0">
-                                {{!-- <div id="location" class="form-outline form-white">
-                                    <input type="text" id="form2" class="form-control form-control-lg" />
-                                    <label class="form-label" for="form2">Location</label>
-                                </div> --}}
                             </div>
                             <div class="col-md-2">
-                                <input class="btn btn-info btn-block btn-lg" type="submit" value="Search" />
+                                <input class="btn btn-info btn-block btn-lg searchBtn" type="submit" value="Search" />
                             </div>
                         </div>
                     </div>
@@ -30,15 +26,10 @@
             </div>
         </div>
     </div>
+    {{!-- images display --}}
+    <div class="hike-images"></div>
 </section>
 
-{{!-- images display --}}
-<div>
-    <li class="hike-images">
-        <ul>1 hike image</ul>
-        <ul>2 hike image</ul>
-        <ul>3 hike image</ul>
-        <ul>4 hike image</ul>
-        <ul>5 hike image</ul>
-    </li>
-</div>
+<script src="/js/hike.js"></script>
+<script src="/js/logout.js"></script>
+<script src="/js/search.js"></script>

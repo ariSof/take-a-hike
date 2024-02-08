@@ -13,8 +13,23 @@ body,
   box-shadow: 6px 6px 6px rgba(46, 54, 68, 0.03);
 }
 
-.hike-images{
+.hike-images {
   display: flex;
-    flex-direction: row;
-    padding: 100px;
+  flex-wrap: wrap;
+  background-color: lightgray;
+}
+
+.hike-images .card {
+  width: 28%;
+  margin: 2.5%;
+  height: 500px;
+}
+
+.card-img-top {
+  height: 228px;
+}
+
+.card-text {
+  height: 140px;
+  overflow: auto;
 }

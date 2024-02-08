@@ -34,9 +34,6 @@ Hike.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    comments: {
-      type: DataTypes.STRING,
-    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
