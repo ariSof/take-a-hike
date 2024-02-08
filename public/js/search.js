@@ -15,6 +15,7 @@ const searchData = async () => {
             console.log(responseData);
             // if hikes found display hikeCards
             displayHikeCards(responseData);
+            document.querySelector('.hike-images').scrollIntoView();
         } else {
             // no hikes found alert
             alert(responseData);
