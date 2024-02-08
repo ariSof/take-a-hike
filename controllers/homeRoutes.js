@@ -3,27 +3,28 @@ const { Hike, User, Image } = require('../models');
 const withAuth = require('../utils/auth');
 
 // this is where you add the routes for each of your pages
-router.get("/", async (req, res) => {
-    try {
-        const hikeData = await Hike.findAll({
-            include: [
-                {
-                    model: User,
-                    atributes: ['id'],
-                },
-            ],
-        });
+// router.get("/", async (req, res) => {
+//     console.log('where')
+//     try {
+//         const hikeData = await Hike.findAll({
+//             include: [
+//                 {
+//                     model: User,
+//                     atributes: ['id'],
+//                 },
+//             ],
+//         });
 
-        const hikes = hikeData.map((hike) => hike.get({ plain: true }));
+//         const hikes = hikeData.map((hike) => hike.get({ plain: true }));
 
-        res.render('home', {
-            hikes,
-            logged_in: req.session.logged_in
-        });
-    } catch (err) {
-        res.status(500).json(err);
-    }
-});
+//         res.render('home', {
+//             hikes,
+//             logged_in: req.session.logged_in
+//         });
+//     } catch (err) {
+//         res.status(500).json(err);
+//     }
+// });
 
 //Route for searching for a hike based on difficutly,  /search/?difficulty=easy
 router.get('/search', async (req, res) => {
@@ -62,8 +63,14 @@ router.get('/search', async (req, res) => {
     }
 });
 
-router.get("/home", (req, res) => {
-    res.render('home');
+router.get("/", (req, res) => {
+    if (req.session.logged_in) {
+        res.render('home', {
+            logged_in: req.session.logged_in
+        });
+    } else {
+        res.render('login');
+    }
 });
 
 router.get("/abouthike", (req, res) => {
@@ -92,7 +99,6 @@ router.get('/profile', withAuth, async (req, res) => {
         res.status(500).json(err);
     }
 });
-
 
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
