@@ -10,8 +10,8 @@
                         <div class="row justify-content-center">
                             <div class="col-md-6 mb-3 mb-md-0">
                                 <div id="basic" class="form-outline form-white">
-                                    <input type="text" id="form1" class="form-control form-control-lg" />
-                                    <label class="form-label" for="form1">Please enter hike name, location, or
+                                    <input type="text" id="searchInput" class="form-control form-control-lg" />
+                                    <label class="form-label" for="searchInput">Please enter hike name, location, or
                                         difficulty</label>
                                 </div>
                             </div>
@@ -22,7 +22,7 @@
                                 </div> --}}
                             </div>
                             <div class="col-md-2">
-                                <input class="btn btn-info btn-block btn-lg" type="submit" value="Search" />
+                                <input class="btn btn-info btn-block btn-lg searchBtn" type="submit" value="Search" />
                             </div>
                         </div>
                     </div>
@@ -33,12 +33,9 @@
 </section>
 
 {{!-- images display --}}
-<div>
-    <li class="hike-images">
-        <ul>1 hike image</ul>
-        <ul>2 hike image</ul>
-        <ul>3 hike image</ul>
-        <ul>4 hike image</ul>
-        <ul>5 hike image</ul>
-    </li>
-</div>
+{{#if logged_in}}
+<div class="hike-images"></div>
+<script src="/js/hike.js"></script>
+<script src="/js/logout.js"></script>
+<script src="/js/search.js"></script>
+{{/if}}
