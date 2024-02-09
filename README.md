@@ -36,7 +36,7 @@ https://enigmatic-cliffs-38751-768457d3d919.herokuapp.com/
 
 ## Credits
 
-J - Jeah
+J - Jeah (unknown)
 A - Aldo Mendoza
 C - Christopher Malatesta
 S - Sofia Villalpando
