@@ -5,12 +5,15 @@ Hiking search engine
 
 A comprehensive hiking platform that revolutionizes the way outdoor enthusiasts explore and connect with nature. With our user-friendly app, you can effortlessly discover trails, read personalized reviews, and get insider tips from a passionate community of hikers. You can also capture and share your epic adventures.
 
-
 ## Installation
 
 run seeds first then run server: npm run seeds, node server.js
 
 ## Usage
+=======
+As a hiking enthusiast, I want to be able to log in and search for hikes based on their difficulty (easy, hard, moderate) so that I can find the perfect hiking trail for my preferences and skills.
+
+Acceptance Criteria:
 
 *The app should have a login/logout functionality that allows users to access the app
 
@@ -31,8 +34,9 @@ run seeds first then run server: npm run seeds, node server.js
 
 https://enigmatic-cliffs-38751-768457d3d919.herokuapp.com/
 
-
-
+// Login Information:
+  email: mona.lisa@ee.com
+  password: 12345678
 
 ## Credits
 
@@ -44,3 +48,4 @@ S - Sofia Villalpando
 ## License
 
 None
+

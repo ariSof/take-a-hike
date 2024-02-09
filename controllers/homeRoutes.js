@@ -134,6 +134,15 @@ router.get('/login', (req, res) => {
 
 });
 
+router.get("/signup", (req, res) => {
+    if (req.session.logged_in) {
+        res.redirect('/');
+        return;
+    } else {
+        res.render('signup');
+    }
+});
+
 router.get('/hike/:id', async (req, res) => {
     try {
         const hikeData = await Hike.findByPk(req.params.id, {
