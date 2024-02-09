@@ -1,0 +1,28 @@
+{{!-- Basic HTML for structure of comments page --}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>This is the hike comments page!</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Page</title>
+    <script src="path/to/handlebars.js"></script>
+</head>
+<body>
+    <div id="comments-container"></div>
+
+{{!-- Handle bars template used to render each comment --}}
+
+    <script id="comments-template" type="text/x-handlebars-template">
+        {{#each comments}}
+    <div class="comment">
+        <p>{{name}} said:</p>
+        <p>{{comment}}</p>
+    </div>
+{{/each}}
+
+    </script>
+    <script src="your_script.js"></script>
+</body>
+</html>
