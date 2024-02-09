@@ -34,8 +34,7 @@ function displayHikeCards(hikeList) {
         buttonEl.classList.add('btn');
         buttonEl.classList.add('btn-primary');
         
-        //TODO: change link to heroku endpoint
-        buttonEl.href = "http://localhost:3001/review?id=" + hike.id;
+        buttonEl.href = "/hike/" + hike.id;
         buttonEl.textContent = 'Check it out!';
 
         //build my card element
