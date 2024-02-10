@@ -10,12 +10,15 @@ A comprehensive hiking platform that revolutionizes the way outdoor enthusiasts 
 run seeds first then run server: npm run seeds, node server.js
 
 ## Usage
-=======
+
+<img width="1504" alt="Screenshot 2024-02-09 at 2 28 04 PM" src="https://github.com/ariSof/take-a-hike/assets/139188803/82a990a7-d2d7-40e8-95e8-acf81284d5bf">
+<img width="1507" alt="Screenshot 2024-02-09 at 2 25 47 PM" src="https://github.com/ariSof/take-a-hike/assets/139188803/5e69d1ff-e146-427c-8228-2633b88c5c8f"> 
+<pre> 
 As a hiking enthusiast, I want to be able to log in and search for hikes based on their difficulty (easy, hard, moderate) so that I can find the perfect hiking trail for my preferences and skills.
 
 Acceptance Criteria:
 
-*The app should have a login/logout functionality that allows users to access the app
+*The app should have a sign-up & login/logout functionality that allows users to access the app 
 
 *The app should have a search functionality that allows users to search for hikes.
 
@@ -34,13 +37,13 @@ Acceptance Criteria:
 
 https://enigmatic-cliffs-38751-768457d3d919.herokuapp.com/
 
-// Login Information:
+// Sign-up or use login information:
   email: mona.lisa@ee.com
   password: 12345678
 
 ## Credits
 
-J - Jeah (unknown)
+J - Jeah Telebrico
 A - Aldo Mendoza
 C - Christopher Malatesta
 S - Sofia Villalpando
