@@ -46,14 +46,6 @@ router.get('/search', async (req, res) => {
                 where: {
                     difficulty: req.query.difficulty
                 },
-<<<<<<< HEAD
-            ],
-        });
-    const hikes = hikeData.map((hike) => hike.get({ plain: true }));
-
-        res.render('home', {
-            hikes,
-=======
             });
 
             const hikes = hikeData.map((hike) => hike.get({ plain: true }));
@@ -74,7 +66,6 @@ router.get('/search', async (req, res) => {
 router.get("/", (req, res) => {
     if (req.session.logged_in) {
         res.render('home', {
->>>>>>> bebe0a0c6681d499617ab70c42f5c5e4bd2750d9
             logged_in: req.session.logged_in
         });
     } else {
@@ -109,7 +100,6 @@ router.get('/profile', withAuth, async (req, res) => {
     }
 });
 
-<<<<<<< HEAD
 router.get("/home",(req, res)=>{
     res.render('home');
 });
@@ -122,8 +112,6 @@ router.get("/comment",(req, res)=>{
     res.render('comment');
 });
 
-=======
->>>>>>> bebe0a0c6681d499617ab70c42f5c5e4bd2750d9
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
     if (req.session.logged_in) {
@@ -166,12 +154,7 @@ router.get('/hike/:id', async (req, res) => {
         });
     } catch (err) {
         res.status(500).json(err);
-<<<<<<< HEAD
-      }
-    });
-=======
     }
 });
 
 module.exports = router;
->>>>>>> bebe0a0c6681d499617ab70c42f5c5e4bd2750d9
