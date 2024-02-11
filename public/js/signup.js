@@ -15,7 +15,7 @@
       if (response.ok) {
         document.location.replace('/');
       } else {
-        alert(response.statusText);
+        alert("password must be at least 8 characters long");
       }
     }
   };

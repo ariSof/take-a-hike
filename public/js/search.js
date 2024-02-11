@@ -1,5 +1,6 @@
 const searchData = async () => {
-    const searchInput = document.querySelector('#searchInput').value.trim();
+    var searchTrim = document.querySelector('#searchInput').value.trim();
+    var searchInput =  searchTrim.toLowerCase();
 
     // if there is an input
     if (searchInput) {
